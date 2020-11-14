@@ -1,4 +1,4 @@
-/// 1- Generate a radom one digit number
+/// 1- Generate a random one digit number
 console.log(Math.floor(Math.random()*10));
 /// 2- Use random to get dice input between 1 to 6
 console.log(Math.floor((Math.random()*1000)%6 +1));
@@ -37,13 +37,16 @@ process.stdin.on('data', function(data)
         process.exit(); 
     } 
     }); 
+    /// Count variable to count the number of inputs to be taken from the user
     var count = 1;
     process.on('exit', function() 
     { 
+        /// Using reduce as the callback function to accumulate the result
         var sum = answers.reduce(function(a, b)
         {
             /// Incrementing the count of the number entered by the user
             ++count;
+            /// Returning the sum of two numbers of the array and default
             return parseInt(a)+parseInt(b);
         });
     console.log("Sum = "+sum+ " Average = "+(sum/count));
