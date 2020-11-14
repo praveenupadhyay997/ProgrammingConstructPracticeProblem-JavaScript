@@ -10,9 +10,7 @@ var inputArray = [];
 /// Sequential construct fails once the input length of srguments increase
 for(var i = 0; i<5; i++)
 {
-    var inputValue = process.argv[2+i];
-    /// Pushing the input to the input array
-    inputArray.push(parseInt(inputValue.toString()));
+    var inputValue = process.argv[2+i];UCparseInt(inputValue.toString()));
 }
 /// Printing the input array
 console.log(inputArray);
@@ -110,7 +108,7 @@ prompts.question("Enter your choice -- head or tail.", function(data)
     console.log(choice.toUpperCase() + " It is!!! Congratulations!!! You have won the toss.");
     else
     console.log("It is " + tossOutcomeToString.toUpperCase() + " Congratulations to the opponent!!! You have won the toss.");
-    /// Exiting the standart input output process
+    /// Exiting the standard input output process
     process.exit();
 });
  */
