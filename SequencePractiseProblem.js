@@ -58,6 +58,7 @@ ask(0);
 const INCH_IN_FEET = 12;
 let conversionRatio = (1/INCH_IN_FEET);
 let numberOfInch = 42;
+/// Converting the units using the unitary principle
 let numberOfFeet = conversionRatio * numberOfInch;
 console.log("Number of feet = " + numberOfFeet);
 /// 5(b) - Converting an area in feet to area in inch square
